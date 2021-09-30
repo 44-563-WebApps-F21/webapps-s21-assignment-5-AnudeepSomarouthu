@@ -15,6 +15,26 @@
 
 </head>
 <body>
+  <nav class="navbar navbar-expand-md navbar-light" style="color: purple; background-color:lavender;">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="animals.html"><b>Interesting Animals</b></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="plane.html"><b>Plane</b></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="train.html"><b>Train</b></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <br>
+  <br>
   <div class="container">
     <div class="row" style="background-color:rgb(177, 9, 65);"><p>Seal</p></div>
     <div class="row" style="background-color:rgb(177, 9, 65);"><p>Oxe</p></div>
@@ -40,6 +60,160 @@
     <div class=" col-md" style="background-color:rgb(11, 150, 73);"><p>Otters</p></div>
   </div>
   <p>Animals row breaks first because height and width constraines are exceeded</p>
+  <div class="container">
+    <div class="d-flex justify-content-between">
+          <img src="Seal.jpg" width="400px" height="400px" class="img-fluid">
+          <img src="Ox.jpg" width="400px" height="400px" class="img-fluid">
+          <img src="Monkey.jpg" width="400px" height="400px" class="img-fluid">
+  </div>
+  </div>
+  <br>
+  <div class="container">
+  <div class="d-flex justify-content-between">
+          <a href="Seal.jpg" alt="Seal" class="img-thumbnail">
+              <img src="Seal.jpg" width="400px" height="400px">
+          </a>
+          <a href="Ox.jpg" alt="Antelope" class="img-thumbnail">
+              <img src="Ox.jpg" width="400px" height="400px">
+          </a>
+         <a href="Monkey.jpg" alt="Numbat" class="img-thumbnail">
+          <img src="Monkey.jpg" width="400px" height="400px">
+         </a>
+  </div>
+  </div>
+  <br>
+  <center><caption style="font-weight: bold; font-size: 60px;"><b> Animals Table</b></caption></center>
+  <br>
+  <table class="table table-bordered table-hover table-sm table-striped" style="width: 100%;">
+  <thread style="text-align: left; border: 2px; font-size: 20px;">
+      <tr style="border: 2px; text-align: center; background-color:brown; color: white;">
+        <th scope="col">Letter</th>
+        <th scope="col">Animal</th>
+        <th scope="col">City</th>
+        <th scope="col">Car</th>
+      </tr>  
+  </thread>
+  <tbody style="text-align: center; border: 2px; width: 60%;">
+      <tr style="border: 2px; text-align: center;" class="table-primary">
+        <th scope="row" style="text-align: center; color:darkblue">S</th>
+        <td>Seal</td>
+        <td>San Fransisco</td>
+        <td>Siata</td>
+      </tr>
+      <tr class="table-secondary" style="border: 2px; color:darkblue">
+        <th scope="row" style="text-align: center;">O</th>
+        <td>Ox</td>
+        <td>Okhlama</td>
+        <td>Orca</td>
+      </tr>
+      <tr class="table-success" style="border: 2px;color:darkblue">
+        <th scope="row" style="text-align: center;">M</th>
+        <td>Monkey</td>
+        <td>Mexico</td>
+        <td>Maybach</td>
+      </tr>
+      <tr class="table-warning" style="border: 2px;color:darkblue">
+        <th scope="row" style="text-align: center;">A</th>
+        <td>Antelope</td>
+        <td>Alaska</td>
+        <td>Audi</td>
+      </tr>
+      <tr class="table-info" style="border: 2px;color:darkblue">
+        <th scope="row" style="text-align: center;">R</th>
+        <td>Rabbit</td>
+        <td>Richmond</td>
+        <td>Radical</td>
+      </tr>
+      <tr class="table-danger " style="border: 2px;color:darkblue">
+        <th scope="row" style="text-align: center;">O</th>
+        <td>Otters</td>
+        <td>Ontario</td>
+        <td>Opel</td>
+      </tr>
+  </tbody>
+  </table>
+  <br>
+  <label style="font-size: 1rem; color:black; background-color: green; padding:10px; font-family: Arial, Helvetica, sans-serif; margin-left:20px;">Button Groups</label>
+  <br>
+  <br>
+  <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups" style="padding-left: 20px;"></div>
+  <div class="btn-group" role="group" aria-label="success group" style="padding-left: 20px;">
+  <button type="button" class="btn btn-success">S</button>
+  <button type="button" class="btn btn-success">O</button>
+  <button type="button" class="btn btn-success">M</button>
+  </div>
+  <div class="btn-group" role="group" aria-label="warning group">
+  <button type="button" class="btn btn-warning">A</button>
+  <button type="button" class="btn btn-warning">R</button>
+  </div>
+  <div class="btn-group" role="group" aria-label="danger group">
+  <button type="button" class="btn btn-danger">O</button>
+  </div>
+  <br>
+  <br>
+  <div class="dropdown" style="padding-left: 20px;">
+  <div class="btn-group" role="group">
+    <button id="btnGroupDrop1" type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+      Dropdown
+    </button>
+    <ul class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+      <li><a class="dropdown-item" href="plane.html">Plane Page</a></li>
+      <li class="dropdown-divider"></li>
+      <li><a class="dropdown-item" href="train.html">Train Page</a></li>
+    </ul>
+  </div>
+  </div>
+  <br>
+  <br>
+  <form style="padding-left: 20px;">
+  <div class="form-group">
+    <label for="InputEmail1" class="form-label">&nbsp;Email address</label>
+    <input type="email" class="form-control" id="InputEmail1" aria-describedby="emailHelp">
+    <div id="emailHelp" class="form-text">&nbsp;We'll never share your email with anyone else.</div>
+  </div>
+  <br/>
+  <div class="form-group">
+    <label for="Animal-label-name" class="form-label">&nbsp;Animal</label>
+    <input type="text" id="animalName" class="form-control" placeholder="Enter your animal">
+  </div>
+  <br/>
+  <div class="form-check">
+    <label class="form-check-label" for="exampleCheck1">Sign up for newsletter? </label>
+    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+  </div>
+  <br/>
+  <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+  <br>
+  <br>
+  <div class="card-group">
+    <div class="card">
+      <img class="card-img-top" src="Seal.jpg" height="400" alt="Seal" >
+      <div class="card-body">
+        <h5 class="card-title">Seal</h5>
+        <p class="card-text">The true Seals, also known as the earless seals and the crawling seals, are over 18 species of semi-aquatic marine mammals of the family Phocidae. They are one of three families within the super family known as pinnipeds.</p>
+        <button type="button" class="btn btn-link btn-outline-primary" onclick="location.href='https://en.wikipedia.org/wiki/Harbor_seal';">Learn more</button>
+      </div>
+    </div>
+    <div class="card">
+      <img class="card-img-top" src="Ox.jpg" height="400" alt="Ox">
+      <div class="card-body">
+        <h5 class="card-title">Ox</h5>
+        <p class="card-text">An ox, also known as a bullock, is a male bovine trained and used as a draft animal. Oxen are commonly castrated adult male cattle; castration inhibits testosterone and aggression, which makes the males docile and safer to work with. Cows or bulls may also be used in some areas.</p>
+        <button type="button" class="btn btn-link btn-outline-primary" onclick="location.href='https://en.wikipedia.org/wiki/Ox';" >Learn more</button>
+      </div>
+    </div>
+    <div class="card">
+      <img class="card-img-top" src="Monkey.jpg"  height="400" alt="Monkey">
+      <div class="card-body">
+        <h5 class="card-title">Monkey</h5>
+        <p class="card-text">Monkey is a common name that may refer to most mammals of the infraorder Simiiformes, also known as the simians.</p>
+        <button type="button" class="btn btn-link btn-outline-primary" onclick="location.href='https://en.wikipedia.org/wiki/Monkey';">Learn more</button>
+      </div>
+    </div>
+    </div>
+  
+  
 
 </body>
 </html>
